@@ -1,0 +1,102 @@
+/* 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navigation {
+    background: #333;
+    color: #fff;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icons .icon {
+    margin: 0 5px;
+    color: #fff;
+} */
+
+.product-center {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item { 
+    width: 23%;
+    margin: 1%;
+    background: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.product-item .overlay{
+    border-radius: 20px;
+}
+
+.product-thumb img {
+    width: 100%;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info h4 {
+    color: #333;
+}
+
+.product-info span {
+    color: #999;
+}
+
+.product-info a {
+    text-decoration: none;
+    color: #333;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.pagination span, .pagination i {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #333;
+}
+
+.pagination .active {
+    background: #333;
+    color: #fff;
+}
+
+.pagination .bx {
+    font-size: 20px;
+}

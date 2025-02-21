@@ -1,0 +1,15 @@
+#search-container {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #search-input {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  

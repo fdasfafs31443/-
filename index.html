@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Иконки-->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Для слайдера-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/showMore.css">
+  <title>Главная</title>
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="navigation">
+      <div class="nav-center container d-flex">
+        <a href="index.html" class="logo">
+          <h1>Пицца от Печенко</h1>
+        </a>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a href="news.html" class="nav-link">Новости</a>
+          </li>
+          <li class="icons d-flex">
+            <a href="login.html" class="icon">
+              <i class="bx bx-user"></i>
+            </a>
+
+            <div class="icon">
+              <i class="bx bx-heart"></i>
+            </div>
+            <a href="cart.html" class="icon">
+              <i class="bx bx-cart"></i>
+            </a>
+          </li>
+        </ul>
+        
+
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Поиск по ID">
+          <button onclick="searchProduct()">Найти</button>
+        </div>
+
+
+        <div class="icons d-flex">
+          <a href="profile.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          
+          
+          <a href="cart.html" class="icon">
+            <i class="bx bx-cart"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="glide" id="glide_1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="center">
+                <div class="left">
+                  <span class="">Что может быть лучше пиццы?</span>
+                  <h1 class="">ЗАКАЖИ ПРЯМО СЕЙЧАС</h1>
+                  <p>Популярно среди любителей вкусной еды</p>
+                  <a href="product.html" class="hero-btn">Заказать</a>
+                </div>
+                <div class="right">
+                  <img class="img1" src="images/hero1.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="center">
+                <div class="left">
+                  <span>Новинки 2025</span>
+                  <h1>СОЧНО И СЫТНО!</h1>
+                  <p>Популярно среди любителей вкусной еды</p>
+                  <a href="product.html" class="hero-btn">Заказать</a>
+                </div>
+                <div class="right">
+                  <img class="img2" src="./images/hero2.png" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Категории -->
+  <section class="section category">
+    <div class="cat-center">
+      <div class="cat">
+        <img src="images/cat1.jpg" alt="" />
+        <div>
+          <p>Тонкое тесто</p>
+        </div>
+      </div>
+      <div class="cat">
+        <img src="./images/cat2.jpg" alt="" />
+        <div>
+          <p>Свежие овощи</p>
+        </div>
+      </div>
+      <div class="cat">
+        <img src="./images/cat3.jpg" alt="" />
+        <div>
+          <p>Натуральный сыр</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section new-arrival">
+    <div class="title">
+      <h1>Уникальные рецепты</h1>
+      <p>Современные технологии помогают нам готовить пиццу, которая покоряет с первого кусочка</p>
+    </div>
+
+    <div class="product-center">
+      <div class="product-item" data-product-id="1" data-product-name="Маргарита" data-product-price="500" data-product-discount="0" data-product-type="Пицца"
+      data-product-image="./images/product-1.jpg">
+        <div class="overlay">
+          <a href="productDetails.html" class="product-thumb">
+            <img src="./images/product-1.jpg" alt="" />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="productDetails.html?id=1">Маргарита</a>
+          <h4>500 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=1"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <div class="product-item" data-product-id="2" data-product-name="Пепперони Феерия" data-product-price="650" data-product-discount="0" data-product-type="Пицца"
+      data-product-image="./images/product-3.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-3.jpg" alt="." />
+          </a>
+        </div>
+
+        <div class="product-info">
+          <a href="">Пепперони Феерия</a>
+          <h4>650 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=2"><i class="bx bx-search"></i></a></li>
+          <li class="add-to-cart"><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <div class="product-item" data-product-id="3" data-product-name="Гавайская Радость" data-product-price="700" data-product-discount="0" data-product-type="Пицца"
+      data-product-image="./images/product-2.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-2.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info"> 
+          <a href="">Гавайская Радость</a>
+          <h4>700 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=3"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+
+      <div class="product-item" data-product-id="4" data-product-name="Мясной Деликатес" data-product-price="800" data-product-discount="0" data-product-type="Пицца"
+        data-product-image="./images/product-4.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-4.jpg" alt="" />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Мясной Деликатес</a>
+          <h4>800 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=4"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+    
+      <div class="product-item" data-product-id="5" data-product-name="Овощной Рай" data-product-price="600" data-product-discount="0" data-product-type="Пицца"
+      data-product-image="./images/product-5.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-5.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Овощной Рай</a>
+          <h4>600 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=5"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      
+      <div class="product-item" data-product-id="6" data-product-name="Четыре Сыра" data-product-price="750" data-product-discount="0" data-product-type="Пицца"
+      data-product-image="./images/product-6.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-6.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Четыре Сыра</a>
+          <h4>750 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=6"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <div class="product-item" data-product-id="7" data-product-name="Морской Бриз" data-product-price="850" data-product-discount="5" data-product-type="Пицца"
+      data-product-image="./images/product-8.png">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-8.png" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Морской Бриз</a>
+          <h4>850 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=7"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <div class="product-item" data-product-id="8" data-product-name="Острая Диабло" data-product-price="700" data-product-discount="0" data-product-type="Пицца"
+      data-product-image="./images/product-9.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-9.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Острая Диабло</a>
+          <h4>700 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=8"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- show more -->
+      <div class="product-item hidden" data-product-id="10" data-product-name="Трюфельная Классика" data-product-price="950" data-product-discount="0" data-product-type="Пицца"
+      data-product-image="images/product-10.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="images/product-10.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Трюфельная Классика</a>
+          <h4>950 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=10"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- show more -->
+      <div class="product-item hidden" data-product-id="11" data-product-name="Сладкая Итальянка" data-product-price="600" data-product-discount="0" data-product-type="Пицца"
+      data-product-image="images/product-11.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="images/product-11.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Сладкая Итальянка</a>
+          <h4>600 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=11"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- show more -->
+      <div class="product-item hidden" data-product-id="12" data-product-name="Эвервесс Кола" data-product-price="100" data-product-discount="0" data-product-type="Напитки"
+      data-product-image="images/product-12.jpeg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="images/product-12.jpeg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Эвервесс Кола</a>
+          <h4>100 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=12"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- show more -->
+      <div class="product-item hidden" data-product-id="13" data-product-name="Чай Lipton Лимон" data-product-price="100" data-product-discount="0" data-product-type="Напитки"
+      data-product-image="images/product-13.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="images/product-13.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Чай Lipton Лимон</a>
+          <h4>100 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=13"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- show more -->
+      <div class="product-item hidden" data-product-id="14" data-product-name="Добрый Лимон-Лайм" data-product-price="100" data-product-discount="0" data-product-type="Напитки"
+      data-product-image="images/product-14.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="images/product-14.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Добрый Лимон-Лайм</a>
+          <h4>100 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=14"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- show more -->
+      <div class="product-item hidden" data-product-id="15" data-product-name="Добрый Апельсин" data-product-price="100" data-product-discount="0" data-product-type="Напитки"
+      data-product-image="images/product-15.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="images/product-15.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Добрый Апельсин</a>
+          <h4>100 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=15"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- show more -->
+      <div class="product-item hidden" data-product-id="16" data-product-name="Добрый Кола без сахара" data-product-price="100" data-product-discount="0" data-product-type="Напитки"
+      data-product-image="images/product-16.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="images/product-16.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Добрый Кола без сахара</a>
+          <h4>100 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=16"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- show more -->
+      <div class="product-item hidden" data-product-id="17" data-product-name="Липтон Зеленый" data-product-price="100" data-product-discount="0" data-product-type="Напитки"
+      data-product-image="images/product-17.jpeg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="images/product-17.jpeg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="">Липтон Зеленый</a>
+          <h4>100 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=17"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <!-- показать еще -->
+      </div>
+      <div class="show-more-container">
+        <button class="show-more-btn">Показать еще</button>
+      </div>
+      <!-- перейти в каталог -->
+      <div class="show-more-container go-more-container">
+        <a href="product.html">
+          <button class="show-more-btn go-more-btn">Перейти в каталог</button>
+        </a>
+      </div>
+
+
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="row">
+      <div class="col d-flex">
+        <h4>Информация</h4>
+        <a href="">О нас</a>
+        <a href="">Связаться</a>
+        <a href="">Партнерская программа</a>
+        <a href="">Инвесторам</a>
+
+      </div>
+      <div class="col d-flex">
+        <h4>Полезно</h4>
+        <a href="">Наши партнеры</a>
+        <a href="">Условия конфиденциальности</a>
+        <a href="">Гарантии</a>
+        <a href="">Доставка</a>
+      </div>
+      <div class="col d-flex">
+        <a href=""><span><i class='bx bxl-facebook-square'></i></span></a>
+        <a href=""><span><i class='bx bxl-instagram-alt'></i></span></a>
+        <a href=""><span><i class='bx bxl-github'></i></span></a>
+        <a href=""><span><i class='bx bxl-twitter'></i></span></a>
+        <a href=""><span><i class='bx bxl-pinterest'></i></span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/Unlogined.js"></script>
+<script src="js/addToFavorite.js"></script>
+<script src="js/showMore.js"></script>
+<script src="js/search.js"></script>
+
+
+<script src="js/addToCart.js"></script>
+</html>

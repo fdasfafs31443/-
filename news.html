@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <title>Новости</title>
+</head> 
+
+<body>
+  <div class="navigation">
+    <div class="nav-center container d-flex">
+      <a href="index.html" class="logo">
+        <h1>Пицца от Печенко</h1>
+      </a>
+      <ul class="nav-list d-flex">
+        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link">Каталог</a></li>
+        <li class="icons d-flex">
+          <a href="profile.html" class="icon"><i class="bx bx-user"></i></a>
+          <a href="cart.html" class="icon"><i class="bx bx-cart"></i></a>
+        </li>
+      </ul>
+      <div class="icons d-flex">
+        <a href="profile.html" class="icon"><i class="bx bx-user"></i></a>
+        <a href="cart.html" class="icon"><i class="bx bx-cart"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Новости -->
+  <section class="news-section container">
+    <h2>Новости</h2>
+    <div class="news-container">
+      <article class="news-item">
+        <img src="images/news1.png" alt="Новость 1">
+        <div class="news-content">
+          <h3>Печенко начнет доставлять пиццу</h3>
+          <p>Мы готовим для вас отличное обновление. Скоро ваша любимая пицца сама будет приезжать к вам всего за 30 минут! Вкусно, быстро и всегда горячо.</p>
+          <button class="read-more" data-target="news1-full">Читать далее</button>
+        </div>
+      </article>
+      <article class="news-item">
+        <img src="images/news2.png" alt="Новость 2">  
+        <div class="news-content">
+          <h3>Обновление ассортимента пицц</h3>
+          <p>Мы обновили наше меню: теперь оно включает новые виды пиццы с улучшенными рецептами и оригинальными вкусами!</p>
+          <button class="read-more" data-target="news2-full">Читать далее</button>
+        </div>
+      </article>
+      <article class="news-item">
+        <img src="images/news3.jpg" alt="Новость 3">
+        <div class="news-content">
+          <h3>Скидки до конца месяца</h3>
+          <p>Не пропустите скидки на все до конца этого месяца! Зайдите в наш каталог и выберите подходящие продукты.</p>
+          <button class="read-more" data-target="news3-full">Читать далее</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Полные тексты новостей -->
+  <section id="news1-full" class="news-full">
+    <div class="news-full-content">
+      <h2>Новая коллекция ноутбуков 2024 года</h2>
+      <p>Они оснащены последними процессорами и графическими картами, что делает их идеальными для работы и развлечений...</p>
+      <button class="close-full">Закрыть</button>
+    </div>
+  </section>
+  <section id="news2-full" class="news-full">
+    <div class="news-full-content">
+      <h2>Обновление ассортимента компьютеров</h2>
+      <p>с улучшенными характеристиками и новыми функциями...</p>
+      <button class="close-full">Закрыть</button>
+    </div>
+  </section>
+  <section id="news3-full" class="news-full">
+    <div class="news-full-content">
+      <h2>Скидки до конца месяца</h2>
+      <p>Не пропустите уникальную возможность приобрести качественные товары по сниженным ценам...</p>
+      <button class="close-full">Закрыть</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" style="margin-top: 135px;">
+    <div class="row">
+      <div class="col d-flex">
+        <h4>Информация</h4>
+        <a href="">О нас</a>
+        <a href="">Связаться</a>
+        <a href="">Партнерская программа</a>
+        <a href="">Инвесторам</a>
+      </div>
+      <div class="col d-flex">
+        <h4>Полезно</h4>
+        <a href="">Наши партнеры</a>
+        <a href="">Условия конфиденциальности</a>
+        <a href="">Гарантии</a>
+        <a href="">Доставка</a>
+      </div>
+      <div class="col d-flex">
+        <a href=""><span><i class='bx bxl-facebook-square'></i></span></a>
+        <a href=""><span><i class='bx bxl-instagram-alt'></i></span></a>
+        <a href=""><span><i class='bx bxl-github'></i></span></a>
+        <a href=""><span><i class='bx bxl-twitter'></i></span></a>
+        <a href=""><span><i class='bx bxl-pinterest'></i></span></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/news.js"></script>
+</body>
+
+</html>

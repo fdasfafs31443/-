@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/comments.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Описание продукта</title>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="nav-center container d-flex">
+            <a href="index.html" class="logo"><h1>Пицца от Печенко</h1></a>
+            <ul class="nav-list d-flex">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link">Каталог</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">Новости</a>
+                </li>
+                <li class="icons d-flex">
+                    <a href="profile.html" class="icon">
+                        <i class="bx bx-user"></i>
+                    </a>
+                  
+                    <div class="icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+                    <a href="cart.html" class="icon">
+                        <i class="bx bx-cart"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="icons d-flex">
+                <a href="profile.html" class="icon">
+                    <i class="bx bx-user"></i>
+                </a>
+               
+                
+                <a href="cart.html" class="icon">
+                    <i class="bx bx-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Описание товара -->
+    <section class="section product-detail">
+        <div class="details container">
+            <div class="left image-container">
+                <div class="main">
+                    <img src="" id="product-image" alt="" data-product-image="" />
+                </div>
+            </div>
+            <div class="right">
+                <h1 id="product-title" data-product-name="">Название продукта</h1>
+                <div class="price" id="product-price" data-product-price="" data-product-discount="">Цена</div>
+                <h3>Описание продукта</h3>
+                
+                <p id="product-description">Описание</p>
+            </div>
+        </div>
+    </section>
+    
+<!-- 
+    <section class="reviews container">
+        <h2>Отзывы</h2>
+        <div id="reviews"></div>
+        <div class="add-review">
+            <h3>Добавить отзыв</h3>
+            <form id="review-form">
+                <textarea id="review-text" rows="4" placeholder="Ваш отзыв" required></textarea>
+                <select id="review-rating" required>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section> -->
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col d-flex">
+                <h4>Информация</h4>
+                <a href="">О нас</a>
+                <a href="">Связаться</a>
+                <a href="">Партнерская программа</a>
+                <a href="">Инвесторам</a>
+            </div>
+            <div class="col d-flex">
+                <h4>Полезно</h4>
+                <a href="">Наши партнеры</a>
+                <a href="">Условия конфиденциальности</a>
+                <a href="">Гарантии</a>
+                <a href="">Доставка</a>
+            </div>
+            <div class="col d-flex">
+                <a href=""><span><i class='bx bxl-facebook-square'></i></span></a>
+                <a href=""><span><i class='bx bxl-instagram-alt'></i></span></a>
+                <a href=""><span><i class='bx bxl-github'></i></span></a>
+                <a href=""><span><i class='bx bxl-twitter'></i></span></a>
+                <a href=""><span><i class='bx bxl-pinterest'></i></span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/goToProduct.js"></script>
+    <script src="js/Unlogined.js"></script>
+    <script src="js/rate.js"></script>
+    <script src="js/addToCart.js"></script>
+</body>
+</html>
+

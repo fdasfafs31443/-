@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Иконки -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="css/pagination.css">
+  <title>Каталог</title>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="nav-center container d-flex">
+      <a href="index.html" class="logo">
+        <h1>Пицца от Печенко</h1>
+      </a>
+
+      <ul class="nav-list d-flex">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a href="product.html" class="nav-link">Каталог</a>
+        </li>
+        <li class="nav-item">
+          <a href="news.html" class="nav-link">Новости</a>
+        </li>
+        <li class="icons d-flex">
+          <a href="profile.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+         
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <a href="cart.html" class="icon">
+            <i class="bx bx-cart"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="icons d-flex">
+        <a href="profile.html" class="icon">
+          <i class="bx bx-user"></i>
+        </a>
+       
+        <a href="cart.html" class="icon">
+          <i class="bx bx-cart"></i>
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Продукты -->
+  <section class="section all-products" id="products">
+    <div class="top container">
+      <h1>Все продукты</h1>
+      <form id="filter-form">
+        <select id="sort-select">
+          <option value="price-asc">По цене (возрастание)</option>
+          <option value="price-desc">По цене (убывание)</option>
+        </select>
+
+        <span><i class="bx bx-chevron-down"></i></span>
+        <select id="filter-select">
+          <option value="all">Все</option>
+          <option value="Компьютеры">Пиццы</option>
+          <option value="Мониторы">Напитки</option>
+        </select>
+      </form>
+    </div>
+    <div class="product-center container" id="product-list">
+      <!-- Продукты будут загружаться сюда -->
+
+      <div class="product-item" data-product-id="3" data-product-name="Гавайская Радость" data-product-price="35500"
+        data-product-discount="0" data-product-type="Компьютеры" data-product-image="./images/product-2.jpg">
+        <div class="overlay">
+          <a href="productDetails.html?id=9" class="product-thumb">
+            <img src="./images/product-2.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <a href="productDetails.html?id=9">Гавайская Радость</a>
+          <h4>35 500 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><a href="productDetails.html?id=3"><i class="bx bx-search"></i></a></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+
+      <div class="product-item" data-product-id="2" data-product-name="Cборка 2" data-product-price="72000"
+        data-product-discount="10" data-product-type="Компьютеры" data-product-image="./images/product-3.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-3.jpg" alt="" />
+          </a>
+          <span class="discount">10%</span>
+        </div>
+        <div class="product-info">
+          <span>Компьютеры</span>
+          <a href="productDetails.html?id=9">Сборка 2</a>
+          <h4>72 000 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+
+      <div class="product-item" data-product-id="4" data-product-name="Cборка 4" data-product-price="83000"
+        data-product-discount="50" data-product-type="Компьютеры" data-product-image="./images/product-4.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-4.jpg" alt="" />
+          </a>
+          <span class="discount">50%</span>
+        </div>
+        <div class="product-info">
+          <span>Компьютеры</span>
+          <a href="">Cборка 4</a>
+          <h4>83 000 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+
+      <div class="product-item" data-product-id="5" data-product-name="Cборка 5" data-product-price="55000"
+        data-product-discount="0" data-product-type="Компьютеры" data-product-image="./images/product-5.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-5.jpg" alt="." />
+          </a>
+        </div>
+        <div class="product-info">
+          <span>Компьютеры</span>
+          <a href="">Cборка 5</a>
+          <h4>55 000 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+
+      <div class="product-item" data-product-id="6" data-product-name="Cборка 6" data-product-price="60000"
+        data-product-discount="0" data-product-type="Компьютеры" data-product-image="./images/product-6.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-6.jpg" alt="" />
+          </a>
+        </div>
+        <div class="product-info">
+          <span>Компьютеры</span>
+          <a href="">Сборка 6</a>
+          <h4>60 000 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <div class="product-item" data-product-id="9" data-product-name="Cборка 9" data-product-price="100000"
+        data-product-discount="40" data-product-type="Компьютеры" data-product-image="./images/product-7.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-7.jpg" alt="" />
+          </a>
+          <span class="discount">40%</span>
+        </div>
+        <div class="product-info">
+          <span>Компьютеры</span>
+          <a href="">Сборка 9</a>
+          <h4>100 000 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+
+      <div class="product-item" data-product-id="4" data-product-name="Cборка 4" data-product-price="83000"
+        data-product-discount="50" data-product-type="Компьютеры" data-product-image="./images/product-4.jpg">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="./images/product-4.jpg" alt="" />
+          </a>
+          <span class="discount">50%</span>
+        </div>
+        <div class="product-info">
+          <span>Компьютеры</span>
+          <a href="">Cборка 4</a>
+          <h4>83 000 ₽</h4>
+        </div>
+        <ul class="icons">
+          <li class="favorite-btn"><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="pagination" id="pagination">
+    <div class="container">
+      <!-- Элементы пагинации будут загружаться сюда -->
+    </div>
+  </section>
+
+  <!-- <section class="pagination">
+    <div class="container">
+      <span>1</span> <span>2</span> <span>3</span> <span>4</span>
+      <span><i class="bx bx-right-arrow-alt"></i></span>
+    </div>
+  </section> -->
+
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col d-flex">
+        <h4>Информация</h4>
+        <a href="">О нас</a>
+        <a href="">Связаться</a>
+        <a href="">Партнерская программа</a>
+        <a href="">Инвесторам</a>
+
+      </div>
+      <div class="col d-flex">
+        <h4>Полезно</h4>
+        <a href="">Наши партнеры</a>
+        <a href="">Условия конфиденциальности</a>
+        <a href="">Гарантии</a>
+        <a href="">Доставка</a>
+      </div>
+      <div class="col d-flex">
+        <a href=""><span><i class='bx bxl-facebook-square'></i></span></a>
+        <a href=""><span><i class='bx bxl-instagram-alt'></i></span></a>
+        <a href=""><span><i class='bx bxl-github'></i></span></a>
+        <a href=""><span><i class='bx bxl-twitter'></i></span></a>
+        <a href=""><span><i class='bx bxl-pinterest'></i></span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="js/Unlogined.js"></script>
+<script src="js/pagination.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Иконки -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Корзина</title>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="nav-center container d-flex">
+      <a href="index.html" class="logo">
+        <h1>Пицца от Печенко</h1>
+      </a>
+      <ul class="nav-list d-flex">
+        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link">Каталог</a></li>
+        <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+        <li class="icons d-flex">
+          <a href="profile.html" class="icon"><i class="bx bx-user"></i></a>
+          <div class="icon"><i class="bx bx-heart"></i></div>
+          <a href="cart.html" class="icon"><i class="bx bx-cart"></i></a>
+        </li>
+      </ul>
+      <div class="icons d-flex">
+        <a href="profile.html" class="icon"><i class="bx bx-user"></i></a>
+        <a href="cart.html" class="icon"><i class="bx bx-cart"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Вещи в корзине -->
+  <div class="container cart">
+    <table>
+      <thead>
+        <tr>
+          <th>Продукт</th>
+          <th>Количество</th>
+          <th>Итого</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Динамически загружаемые товары -->
+      </tbody>
+    </table>
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Итого</td>
+          <td id="total-price">0 ₽</td>
+        </tr>
+      </table>
+      <div class="checkout-btn-container">
+        <button class="checkout-btn">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно для оформления заказа -->
+  <div class="modal" id="orderModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Оформление заказа</h2>
+      <form id="order-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Адрес доставки:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <button type="submit" class="checkout btn">Оплатить</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="row">
+      <div class="col d-flex">
+        <h4>Информация</h4>
+        <a href="">О нас</a>
+        <a href="">Связаться</a>
+        <a href="">Партнерская программа</a>
+        <a href="">Инвесторам</a>
+      </div>
+      <div class="col d-flex">
+        <h4>Полезно</h4>
+        <a href="">Наши партнеры</a>
+        <a href="">Условия конфиденциальности</a>
+        <a href="">Гарантии</a>
+        <a href="">Доставка</a>
+      </div>
+      <div class="col d-flex">
+        <a href=""><span><i class='bx bxl-facebook-square'></i></span></a>
+        <a href=""><span><i class='bx bxl-instagram-alt'></i></span></a>
+        <a href=""><span><i class='bx bxl-github'></i></span></a>
+        <a href=""><span><i class='bx bxl-twitter'></i></span></a>
+        <a href=""><span><i class='bx bxl-pinterest'></i></span></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/Unlogined.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/zakaz.js"></script>
+</body>
+
+</html>
